@@ -1,0 +1,20 @@
+<html>
+<body>
+<canvas id="canvas" width="200" height="200"></canvas>
+<script>
+var circle = function (x, y, radius) {
+ctx.beginPath();
+ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+ctx.stroke();
+};
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.lineWidth = 4;
+ctx.strokeStyle = "Black";
+circle(100, 100, 20);
+ctx.strokeStyle = "Black";
+ctx.fillStyle = "Black";
+circle(100, 150, 30);
+</script>
+</body>
+</html>
