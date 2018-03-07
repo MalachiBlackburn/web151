@@ -1,0 +1,40 @@
+<html>
+<body>
+<canvas id="canvas" width="200" height="200"></canvas>
+<script>
+
+var circle = function (x, y, radius, fillCircle) {
+ctx.beginPath();
+ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+if (fillCircle) {
+ctx.fill();
+}
+else{
+ctx.stroke();
+}
+};
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.lineWidth = 4;
+ctx.strokeStyle = "Black";
+circle(100, 100, 20,false);
+ctx.strokeStyle = "Black";
+circle(100, 150, 30, false);
+circle(93,98,4,true);
+circle(107,98,4,true);
+circle(100,135,4,true);
+circle(100,165,4,true);
+circle(100, 150, 4, true);
+ctx.strokeStyle = "#FFA500";
+ctx.fillStyle = "#FFA500";
+circle(100,105,4, true);
+ctx.fill();
+
+
+
+
+
+</script>
+</body>
+</html>

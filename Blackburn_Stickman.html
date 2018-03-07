@@ -1,0 +1,23 @@
+<html>
+<body>
+<canvas id="canvas" width="1000" height="1000"></canvas>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle= "Black";
+ctx.linewidth = 4;
+ctx.beginPath();
+ctx.strokeRect(20, 20, 20, 20);//Head
+ctx.moveTo(30, 40);
+ctx.lineTo(30, 90);//Body
+ctx.lineTo(45, 135);//Right Leg
+ctx.moveTo(30, 90);
+ctx.lineTo(15, 135);//Left Leg
+ctx.moveTo(30, 65);
+ctx.lineTo(5,40);//Left Arm
+ctx.moveTo(30, 65);
+ctx.lineTo(55,40);//Right Arm
+ctx.stroke();
+</script>
+</body>
+</html>
